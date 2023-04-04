@@ -1,0 +1,16 @@
+.sidebar {
+  @apply grid grid-rows-[auto_1fr_auto] content-between 
+  gap-y-24;
+
+  .nav {
+    @apply flex flex-col gap-y-7;
+
+    .navItem {
+      @apply flex items-center gap-3;
+
+      & svg {
+        @apply w-5  fill-dark_gray hover:fill-black;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.tag {
+  display: inline-block;
+
+  box-sizing: border-box;
+}
+
+.s {
+  padding: 5px 10px;
+
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.m {
+  padding: 5px 10px;
+
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.lg {
+  padding: 5px 10px;
+
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.xl {
+  font-size: 20px;
+}
+
+.ghost {
+  border: 1px solid var(--grey-light);
+}
+
+.green {
+  @apply bg-green py-1 px-3 rounded-md text-white;
+}
