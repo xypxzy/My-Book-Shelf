@@ -1,16 +1,12 @@
 .layout {
   @apply grid font-primary_fonts 
   grid-cols-[1fr]
-  grid-rows-[50px_1fr]
-  h-screen
-  md:grid-cols-[300px_minmax(400px,_1fr)]
-  px-10 py-11;
+  px-8 py-11 h-screen
+  md:grid-cols-[minmax(200px,_300px)_minmax(400px,_1fr)];
 
   .sidebar {
-    @apply h-full grid grid-rows-[1fr_200px] content-between ml-14;
-    .footer {
-      @apply flex justify-end;
-    }
+    @apply hidden 
+    md:grid;
   }
 }
 

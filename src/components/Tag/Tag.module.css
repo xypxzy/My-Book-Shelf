@@ -19,14 +19,12 @@
 }
 
 .lg {
-  padding: 5px 10px;
-
   font-size: 14px;
-  line-height: 14px;
+  line-height: 30px;
 }
 
 .xl {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .ghost {

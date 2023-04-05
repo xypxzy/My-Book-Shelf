@@ -1,16 +1,27 @@
 .sidebar {
-  @apply grid grid-rows-[auto_1fr_auto] content-between 
-  gap-y-24;
+  @apply flex flex-col justify-between font-primary_fonts font-normal
+  py-5 pl-12;
 
-  .nav {
-    @apply flex flex-col gap-y-7;
+  .upper {
+    @apply flex flex-col gap-y-20;
 
-    .navItem {
-      @apply flex items-center gap-3;
+    .nav {
+      .navItem {
+        @apply flex items-center gap-3 mb-7
+        text-dark_gray hover:text-black duration-200;
 
-      & svg {
-        @apply w-5  fill-dark_gray hover:fill-black;
+        & svg {
+          @apply w-5  fill-dark_gray;
+        }
+        &:hover svg {
+          @apply fill-black duration-200;
+        }
       }
+    }
+  }
+  .footer {
+    .footerItem {
+      @apply text-dark_gray hover:text-black cursor-pointer duration-200;
     }
   }
 }

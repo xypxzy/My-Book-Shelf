@@ -12,10 +12,10 @@ import { Tag } from '../../components/Tag/Tag';
 export const Sidebar = ({ className, ...props }: SidebarProps) => {
   return (
     <div className={styles.sidebar}>
-      <div className={styles.logo}>
-        <AppLogo width={120} height={75} />
-      </div>
-      <div>
+      <div className={styles.upper}>
+        <div className={styles.logo}>
+          <AppLogo width={120} height={75} />
+        </div>
         <ul className={styles.nav}>
           <li>
             <Link to={'/'} className={styles.navItem}>
@@ -41,6 +41,19 @@ export const Sidebar = ({ className, ...props }: SidebarProps) => {
 
               <Tag size='xl'>Contribute</Tag>
             </Link>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul className={styles.footer}>
+          <li className={styles.footerItem}>
+            <Tag size='lg'>About</Tag>
+          </li>
+          <li className={styles.footerItem}>
+            <Tag size='lg'>Support</Tag>
+          </li>
+          <li className={styles.footerItem}>
+            <Tag size='lg'>Terms & Condition</Tag>
           </li>
         </ul>
       </div>
